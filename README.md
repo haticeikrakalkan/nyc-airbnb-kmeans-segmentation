@@ -57,3 +57,26 @@ Clusters were validated for:
 - matplotlib, seaborn, plotly (visualization)
 
 ## Project Structure
+├── NYC_Airbnb_KMeans_Segmentation.ipynb # Full analysis notebook
+├── airbnb.csv # Dataset (not included — see below)
+└── README.md
+
+
+## Dataset
+
+The dataset is not included in this repo due to size/licensing. Download it from 
+[Kaggle](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data) and place 
+`airbnb.csv` in the project root before running the notebook.
+
+## Getting Started
+
+```bash
+pip install pandas numpy scikit-learn kneed matplotlib seaborn plotly
+jupyter notebook NYC_Airbnb_KMeans_Segmentation.ipynb
+```
+
+## Possible Next Steps
+
+- Compare against density-based clustering (DBSCAN)
+- Try alternative values of `k` for finer-grained business segments
+- Build a price-prediction model conditioned on cluster membership
